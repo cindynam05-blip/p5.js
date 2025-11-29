@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>P5.js 과제 포트폴리오</title>
+    <style>
+        body { font-family: 'Helvetica', sans-serif; text-align: center; background-color: #f0f2f5; margin: 0; padding: 40px; }
+        h1 { color: #333; margin-bottom: 40px; }
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .card {
+            background: white;
+            padding: 15px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: transform 0.2s;
+        }
+        .card:hover { transform: translateY(-5px); }
+        h3 { margin-top: 0; color: #555; }
+        iframe {
+            width: 100%;
+            height: 405px;
+            border: 1px solid #eee;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 10px;
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <h1>🎨 나의 P5.js 작품 갤러리</h1>
+
+    <div class="grid-container">
+        <!-- 1행: 과제 1, 과제 4 -->
+        <div class="card">
+            <h3>과제 1: 도형 추상화</h3>
+            <iframe src="hw1/index.html" scrolling="no"></iframe>
+            <a href="hw1/index.html" target="_blank" class="btn">전체 화면으로 보기 &rarr;</a>
+        </div>
+        <div class="card">
+            <h3>과제 4: 움직이는 도형 (Animation)</h3>
+            <iframe src="hw4/index.html" scrolling="no"></iframe>
+            <a href="hw4/index.html" target="_blank" class="btn">전체 화면으로 보기 &rarr;</a>
+        </div>
+
+        <!-- 2행: 과제 2, 과제 3 -->
+        <div class="card">
+            <h3>과제 2: 자화상 (Character)</h3>
+            <iframe src="hw2/index.html" scrolling="no"></iframe>
+            <a href="hw2/index.html" target="_blank" class="btn">전체 화면으로 보기 &rarr;</a>
+        </div>
+        <div class="card">
+            <h3>과제 3: 인터랙티브 아트</h3>
+            <iframe src="hw3/index.html" scrolling="no"></iframe>
+            <a href="hw3/index.html" target="_blank" class="btn">전체 화면으로 보기 &rarr;</a>
+        </div>
+    </div>
+</body>
+</html>
